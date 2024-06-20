@@ -48,7 +48,7 @@
         include("components/header.php");
     ?>
     <form class="mx-auto max-w-2xl px-6 py-12" action="#" method="GET">
-        <input type=" hidden" name="id" value="<?php echo $id ?>">
+        <input type="hidden" name="id" value="<?php echo $id ?>">
         <div class="space-y-12">
             <div class="border-b border-gray-900/10">
                 <div class="flex items-center justify-between">
