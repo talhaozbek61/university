@@ -1,3 +1,10 @@
+<?php
+include("db.php");
+include("utils/login-control.php");
+session_start();
+if ($_SESSION)
+    header("Location: dashboard");
+?>
 <!DOCTYPE html>
 <html lang="en" class="h-full">
 
@@ -5,6 +12,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+    <!-- Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="image/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="image/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="image/favicon-16x16.png">
+    <link rel="manifest" href="image/site.webmanifest">
+    <link rel="mask-icon" href="image/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
     <title>Star Cafe Login</title>
 </head>
 
@@ -27,7 +43,11 @@
         <!-- Form -->
         <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
 
-
+            <!-- Form Error -->
+            <?php
+            if(isset($_POST["email"]) && isset($_POST["password"]))
+            echo ($error)
+            ?>
 
             <!-- Form -->
             <form class="space-y-6" method="POST" action="#">
