@@ -17,6 +17,10 @@ This project is a web application for a cafe, created using PHP, MySQL, and Tail
 - **MySQL**: Database.
 - **Tailwind CSS**: For styling the website. Tailwind CSS is supported by all modern browsers and provides an easy-to-use, minimalist, and sleek design.
 
+### Live Demo
+
+Check out the live demo: [Cafe Website](https://star-cafe.rf.gd/)
+
 ### How to Use
 
 1. **Clone the Repository**: `git clone https://github.com/talhaozbek61/university.git`
@@ -46,6 +50,10 @@ Bu proje, Universitede Bahar döneminde Web Programcılığı dersi kapsamında,
 - **PHP**: Sunucu tarafı betik dili.
 - **MySQL**: Veritabanı.
 - **Tailwind CSS**: Web sitesinin stillendirilmesi için. Tailwind CSS, modern tarayıcılar tarafından desteklenir ve kullanımı kolay, minimalist ve şık bir tasarım sunar.
+
+### Canlı Demo
+
+Canlı demoyu inceleyin: [Cafe Web Sitesi](https://star-cafe.rf.gd/)
 
 ### Kullanım
 

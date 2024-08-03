@@ -2,10 +2,10 @@
 -- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
--- Anamakine: localhost
--- Üretim Zamanı: 20 Haz 2024, 22:11:40
--- Sunucu sürümü: 10.4.28-MariaDB
--- PHP Sürümü: 8.2.4
+-- Host: localhost
+-- Generation Time: Aug 03, 2024 at 01:51 PM
+-- Server version: 10.4.28-MariaDB
+-- PHP Version: 8.2.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,13 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Veritabanı: `star-cafe`
+-- Database: `star-cafe`
 --
 
 -- --------------------------------------------------------
 
 --
--- Tablo için tablo yapısı `about`
+-- Table structure for table `about`
 --
 
 CREATE TABLE `about` (
@@ -41,7 +41,7 @@ CREATE TABLE `about` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_turkish_ci;
 
 --
--- Tablo döküm verisi `about`
+-- Dumping data for table `about`
 --
 
 INSERT INTO `about` (`id`, `title`, `image`, `firstParagraph`, `secondParagraph`, `lastParagraph`, `phone`, `email`, `instagram`, `twitter`) VALUES
@@ -50,7 +50,7 @@ INSERT INTO `about` (`id`, `title`, `image`, `firstParagraph`, `secondParagraph`
 -- --------------------------------------------------------
 
 --
--- Tablo için tablo yapısı `drinks`
+-- Table structure for table `drinks`
 --
 
 CREATE TABLE `drinks` (
@@ -61,7 +61,7 @@ CREATE TABLE `drinks` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_turkish_ci;
 
 --
--- Tablo döküm verisi `drinks`
+-- Dumping data for table `drinks`
 --
 
 INSERT INTO `drinks` (`id`, `name`, `image`, `price`) VALUES
@@ -76,7 +76,7 @@ INSERT INTO `drinks` (`id`, `name`, `image`, `price`) VALUES
 -- --------------------------------------------------------
 
 --
--- Tablo için tablo yapısı `foods`
+-- Table structure for table `foods`
 --
 
 CREATE TABLE `foods` (
@@ -87,7 +87,7 @@ CREATE TABLE `foods` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_turkish_ci;
 
 --
--- Tablo döküm verisi `foods`
+-- Dumping data for table `foods`
 --
 
 INSERT INTO `foods` (`id`, `name`, `image`, `price`) VALUES
@@ -101,7 +101,7 @@ INSERT INTO `foods` (`id`, `name`, `image`, `price`) VALUES
 -- --------------------------------------------------------
 
 --
--- Tablo için tablo yapısı `users`
+-- Table structure for table `users`
 --
 
 CREATE TABLE `users` (
@@ -112,7 +112,7 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_turkish_ci;
 
 --
--- Tablo döküm verisi `users`
+-- Dumping data for table `users`
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `password`) VALUES
@@ -120,57 +120,57 @@ INSERT INTO `users` (`id`, `name`, `email`, `password`) VALUES
 (10, 'Mod', 'mod@star.cafe', 'star-mod');
 
 --
--- Dökümü yapılmış tablolar için indeksler
+-- Indexes for dumped tables
 --
 
 --
--- Tablo için indeksler `about`
+-- Indexes for table `about`
 --
 ALTER TABLE `about`
   ADD PRIMARY KEY (`id`);
 
 --
--- Tablo için indeksler `drinks`
+-- Indexes for table `drinks`
 --
 ALTER TABLE `drinks`
   ADD PRIMARY KEY (`id`);
 
 --
--- Tablo için indeksler `foods`
+-- Indexes for table `foods`
 --
 ALTER TABLE `foods`
   ADD PRIMARY KEY (`id`);
 
 --
--- Tablo için indeksler `users`
+-- Indexes for table `users`
 --
 ALTER TABLE `users`
   ADD PRIMARY KEY (`id`);
 
 --
--- Dökümü yapılmış tablolar için AUTO_INCREMENT değeri
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- Tablo için AUTO_INCREMENT değeri `about`
+-- AUTO_INCREMENT for table `about`
 --
 ALTER TABLE `about`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- Tablo için AUTO_INCREMENT değeri `drinks`
+-- AUTO_INCREMENT for table `drinks`
 --
 ALTER TABLE `drinks`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
--- Tablo için AUTO_INCREMENT değeri `foods`
+-- AUTO_INCREMENT for table `foods`
 --
 ALTER TABLE `foods`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=49;
 
 --
--- Tablo için AUTO_INCREMENT değeri `users`
+-- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
